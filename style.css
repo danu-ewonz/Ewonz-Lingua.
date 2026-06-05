@@ -8,7 +8,7 @@ body {
   align-items: center;
 }
 
-/* 🌟 GOLD MAIN BOX */
+/* GOLD BOX */
 .gold-box {
   position: relative;
   background: white;
@@ -20,7 +20,6 @@ body {
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* GOLD BORDER ANIMATION */
 .gold-box::before {
   content: "";
   position: absolute;
@@ -59,30 +58,28 @@ body {
   margin-top: 15px;
 }
 
-/* GRID WITH GOLD SEPARATION */
+/* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   margin-top: 20px;
 }
 
-/* HIRAGANA CARD */
+/* CARD */
 .hira-card {
-  position: relative;
-  padding: 15px;
+  padding: 10px;
   border-radius: 12px;
-  background: white;
-  font-size: 25px;
+  border: 1px solid gold;
+  font-size: 22px;
   font-weight: bold;
   color: #d10050;
   cursor: pointer;
-  border: 1px solid gold;
+  background: white;
 }
 
-/* SOUND TEXT */
 .hira-card span {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   color: #555;
 }
