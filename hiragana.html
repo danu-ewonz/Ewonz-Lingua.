@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hiragana</title>
+  <title>Hiragana - Ewonz Lingua</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,6 +11,7 @@
 
   <h1>🈶 Hiragana</h1>
 
+  <!-- LETTER GRID -->
   <div class="grid">
 
     <div class="hira-card">あ</div>
@@ -21,11 +22,29 @@
 
   </div>
 
-  <a href="hiragana-step.html">
-    <button>Hiragana Step ➡️</button>
-  </a>
+  <!-- BUTTON -->
+  <button onclick="showStep()">Hiragana Step ➡️</button>
+
+  <!-- STEP SECTION (hidden first) -->
+  <div id="stepBox" style="display:none; margin-top:20px;">
+
+    <h2>📖 Step Learning</h2>
+
+    <div class="step-card">A - あ</div>
+    <div class="step-card">I - い</div>
+    <div class="step-card">U - う</div>
+    <div class="step-card">E - え</div>
+    <div class="step-card">O - お</div>
+
+  </div>
 
 </div>
+
+<script>
+function showStep() {
+  document.getElementById("stepBox").style.display = "block";
+}
+</script>
 
 </body>
 </html>
