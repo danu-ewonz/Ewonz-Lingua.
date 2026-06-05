@@ -1,91 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Hiragana - Ewonz Lingua</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<div class="gold-box full">
-
-  <!-- CLEAN TITLE ONLY -->
-  <h1>Hiragana</h1>
-  <p>ひらがな</p>
-
-  <div class="grid">
-
-    <div class="hira-card" onclick="speak('a')">あ <span>A</span></div>
-    <div class="hira-card" onclick="speak('i')">い <span>I</span></div>
-    <div class="hira-card" onclick="speak('u')">う <span>U</span></div>
-    <div class="hira-card" onclick="speak('e')">え <span>E</span></div>
-    <div class="hira-card" onclick="speak('o')">お <span>O</span></div>
-
-    <div class="hira-card" onclick="speak('ka')">か <span>KA</span></div>
-    <div class="hira-card" onclick="speak('ki')">き <span>KI</span></div>
-    <div class="hira-card" onclick="speak('ku')">く <span>KU</span></div>
-    <div class="hira-card" onclick="speak('ke')">け <span>KE</span></div>
-    <div class="hira-card" onclick="speak('ko')">こ <span>KO</span></div>
-
-    <div class="hira-card" onclick="speak('sa')">さ <span>SA</span></div>
-    <div class="hira-card" onclick="speak('shi')">し <span>SHI</span></div>
-    <div class="hira-card" onclick="speak('su')">す <span>SU</span></div>
-    <div class="hira-card" onclick="speak('se')">せ <span>SE</span></div>
-    <div class="hira-card" onclick="speak('so')">そ <span>SO</span></div>
-
-    <div class="hira-card" onclick="speak('ta')">た <span>TA</span></div>
-    <div class="hira-card" onclick="speak('chi')">ち <span>CHI</span></div>
-    <div class="hira-card" onclick="speak('tsu')">つ <span>TSU</span></div>
-    <div class="hira-card" onclick="speak('te')">て <span>TE</span></div>
-    <div class="hira-card" onclick="speak('to')">と <span>TO</span></div>
-
-    <div class="hira-card" onclick="speak('na')">な <span>NA</span></div>
-    <div class="hira-card" onclick="speak('ni')">に <span>NI</span></div>
-    <div class="hira-card" onclick="speak('nu')">ぬ <span>NU</span></div>
-    <div class="hira-card" onclick="speak('ne')">ね <span>NE</span></div>
-    <div class="hira-card" onclick="speak('no')">の <span>NO</span></div>
-
-    <div class="hira-card" onclick="speak('ha')">は <span>HA</span></div>
-    <div class="hira-card" onclick="speak('hi')">ひ <span>HI</span></div>
-    <div class="hira-card" onclick="speak('fu')">ふ <span>FU</span></div>
-    <div class="hira-card" onclick="speak('he')">へ <span>HE</span></div>
-    <div class="hira-card" onclick="speak('ho')">ほ <span>HO</span></div>
-
-    <div class="hira-card" onclick="speak('ma')">ま <span>MA</span></div>
-    <div class="hira-card" onclick="speak('mi')">み <span>MI</span></div>
-    <div class="hira-card" onclick="speak('mu')">む <span>MU</span></div>
-    <div class="hira-card" onclick="speak('me')">め <span>ME</span></div>
-    <div class="hira-card" onclick="speak('mo')">も <span>MO</span></div>
-
-    <div class="hira-card" onclick="speak('ya')">や <span>YA</span></div>
-    <div class="hira-card" onclick="speak('yu')">ゆ <span>YU</span></div>
-    <div class="hira-card" onclick="speak('yo')">よ <span>YO</span></div>
-
-    <div class="hira-card" onclick="speak('ra')">ら <span>RA</span></div>
-    <div class="hira-card" onclick="speak('ri')">り <span>RI</span></div>
-    <div class="hira-card" onclick="speak('ru')">る <span>RU</span></div>
-    <div class="hira-card" onclick="speak('re')">れ <span>RE</span></div>
-    <div class="hira-card" onclick="speak('ro')">ろ <span>RO</span></div>
-
-    <div class="hira-card" onclick="speak('wa')">わ <span>WA</span></div>
-    <div class="hira-card" onclick="speak('wo')">を <span>WO</span></div>
-
-    <div class="hira-card" onclick="speak('n')">ん <span>N</span></div>
-
-  </div>
-
+<div class="hira-card" onclick="speakJapanese('あ')">
+  あ
+  <span>A</span>
 </div>
 
-<script>
-function speak(text){
-  let msg = new SpeechSynthesisUtterance(text);
-  msg.lang = "en-US";
-  speechSynthesis.speak(msg);
-}
-</script>
+<div class="hira-card" onclick="speakJapanese('い')">
+  い
+  <span>I</span>
+</div>
 
+<div class="hira-card" onclick="speakJapanese('う')">
+  う
+  <span>U</span>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
