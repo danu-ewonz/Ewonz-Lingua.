@@ -2,77 +2,42 @@ body {
   margin: 0;
   font-family: Arial;
   background: linear-gradient(135deg, #ffe0eb, #ffd1dc);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-/* MAIN BOX CENTER */
-.container {
-  text-align: center;
+/* 🌟 GOLD MAIN BOX */
+.gold-box {
+  position: relative;
   background: white;
   padding: 25px;
   border-radius: 20px;
   width: 90%;
   max-width: 420px;
+  text-align: center;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* GRID CENTER */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-/* HIRAGANA CARD */
-.hira-card {
-  width: 80px;
-  height: 90px;
-  border-radius: 15px;
-  background: white;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  color: #d10050;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-
-/* JAPANESE LETTER */
-.jp {
-  font-size: 30px;
-}
-
-/* SOUND LETTER */
-.en {
-  font-size: 14px;
-  color: #555;
-}
-
 /* GOLD BORDER ANIMATION */
-.hira-card::before {
+.gold-box::before {
   content: "";
   position: absolute;
   inset: -3px;
-  border-radius: 18px;
+  border-radius: 23px;
   background: linear-gradient(45deg, gold, #fff8b0, gold, #d4af37);
   background-size: 300% 300%;
   z-index: -1;
   animation: goldMove 3s linear infinite;
 }
 
-.hira-card::after {
+.gold-box::after {
   content: "";
   position: absolute;
   inset: 2px;
   background: white;
-  border-radius: 12px;
+  border-radius: 18px;
   z-index: -1;
 }
 
@@ -80,4 +45,44 @@ body {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/* BUTTON */
+.main-btn {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: #d10050;
+  color: white;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+/* GRID WITH GOLD SEPARATION */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* HIRAGANA CARD */
+.hira-card {
+  position: relative;
+  padding: 15px;
+  border-radius: 12px;
+  background: white;
+  font-size: 25px;
+  font-weight: bold;
+  color: #d10050;
+  cursor: pointer;
+  border: 1px solid gold;
+}
+
+/* SOUND TEXT */
+.hira-card span {
+  display: block;
+  font-size: 14px;
+  color: #555;
 }
